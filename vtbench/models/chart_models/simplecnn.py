@@ -28,7 +28,7 @@ class SimpleCNN(nn.Module):
             nn.Flatten(),
             nn.Linear(self.flatten_size, 64),
             nn.ReLU(),
-            nn.Dropout(0.5)
+            nn.Dropout(0.25)
         )
 
         if num_classes is not None:
